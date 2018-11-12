@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>WebAgency</title>
+		<!-- Balises meta pour faciliter le référencement naturel sur Internet -->
+		<meta name="title" content="WebAgency : l'agence de tous vos projets !">
+		<meta name="description" content="Vous avez un projet web ? La WebAgency est là pour vous aider à le réaliser !">
+		<meta name="author" content="Gambit13">
+		<meta property="og:title" content="WebAgency : l'agence de tous vos projets !">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="Vous avez un projet web ? La WebAgency est là pour vous aider à le réaliser !">
+		<meta property="og:locale" content="fr_FR">
+		<meta property="og:site_name" content="WebAgency">
+		<!-- lien vers la petite icône de favicon -->
+		<link href="images/ico/favicon.png" rel="icon" />
+		<!-- lien vers la feuille de style en CSS -->
+		<link href="style.css" rel="stylesheet">
+		<!-- lien vers la police de caractère utilisée -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<!-- lien vers le site de Fontawesome pour la gestion des icônes -->
+		<link href="https://use.fontawesome.com/0ac8ad8b82.css" media="all" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!-- En-tête -->
+		<header>
+			<div id="container-top"> 
+				<!-- l'en-tête reste fixe sur la page et les différentes rubriques sont placées dans la barre de navigation -->
+				<div id="logo">
+					<img src="images/logo.png" alt="WebAgency logo" />
+				</div>
+				<nav>
+				<!-- barre de navigation -->
+					<ul>
+						<li class="active"><a href="#accueil">Accueil</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				<!-- affiche le menu burger pour les smartphones -->
+				<div class="burger">
+					<span></span>
+				</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Page d'accueil -->
+		<section id="accueil">
+			<div id="slider">
+				<figure> 
+					<!-- images qui défilent sous la forme de diaporama -->
+					<img id="picture-1" src="images/slider/bg1.jpg" alt="slide-1" />
+					<img id="picture-2" src="images/slider/bg2.jpg" alt="slide-2" />
+				</figure>
+				<div id="slider-nav"> 
+					<!-- flèches de défilement gauche et droite -->
+					<div id="arrow-left" class="arrow">
+						<i class="fa fa-angle-left fa-lg"></i>
+					</div>
+					<div id="arrow-right" class="arrow">
+						<i class="fa fa-angle-right fa-lg"></i>
+					</div>
+				</div>
+				<div id="text-slide"> 
+					<!-- texte qui apparait sur les images -->
+					<h1><span>WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+					<p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+					<!-- bouton cliquable qui renvoie vers le formulaire de contact -->
+					<a href="#contact"><button class="button">Plus d'infos</button></a> 
+				</div>
+			</div>
+		</section>
+		
+	
+		<!-- Rubrique services -->
+		<section id="services">
+			<div class="intro">
+				<h2>NOS SERVICES</h2>
+				<div class="deco">
+					<hr />
+					<i class="fa fa-circle"></i>
+				</div>
+				<p>Afin de satisfaire au mieux toutes vos demandes, nous vous proposons un large choix de services et nous vous garantissons un accompagnement personalisé pour réaliser tous vous projets numériques.</p>
+			</div>
+			<div id="full-services">
+				<div id="computer"> 
+					<!-- photo ordinateur -->
+					<img src="images/main-feature.png" alt="computer" />
+				</div>
+				<div id="description">
+					<div class="deco"> 
+						<!-- icône en forme de courbe montante -->
+						<i class="fa fa-line-chart fa-lg icon"></i>
+						<i class="fa fa-circle"></i>
+					</div>
+					<div class="text">
+						<h3>UX design</h3>
+						<p>Nous pensons et concevons votre site web de manière à vous délivrer la meilleure expérience utilisateur possible.</p>
+					</div>
+					<div class="deco"> 
+						<!-- icône en forme de cubes empilés -->
+						<i class="fa fa-cubes fa-lg icon"></i>
+						<i class="fa fa-circle"></i>
+					</div>
+					<div class="text">
+						<h3>UI design</h3>
+						<p>Nous sommes à l'écoute de vos envies et nous nous engageons à vous délivrer une interface utilisateur de qualité.</p>
+					</div>
+					<div class="deco"> 
+						<!-- icône en forme de diagramme -->
+						<i class="fa fa-pie-chart fa-lg icon"></i>
+						<i class="fa fa-circle"></i>
+					</div>
+					<div class="text">
+						<h3>SEO</h3>
+						<p>Nous optimisons la visibilité de votre site web dans les pages de résultats des moteurs de recherche.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Rubrique projets -->
+		<section id="portfolio">
+			<div class="title">
+				<h2>NOS PROJETS</h2>
+				<div class="deco">
+					<hr />
+					<i class="fa fa-circle"></i>
+				</div>
+				<p>Voici quelques exemples de projets que nous avons réalisé pour nos clients. Serez-vous le prochain à apparaître sur notre site ?</p>
+			</div>
+			<!-- formulaire pour rendre les boutons fonctionnels -->
+			<form> 
+				<!-- boutons cachés pour changer de rubrique sans Javascript-->
+				<input type="radio" name="btn" id="btn-all" checked> 
+				<input type="radio" name="btn" id="btn-creative">
+				<input type="radio" name="btn" id="btn-corporate">
+				<input type="radio" name="btn" id="btn-portfolio">
+				<!-- barre de navigation pour le menu portfolio -->
+				<div id="projects"> 
+					<label for="btn-all">All Works<i class="fa fa-caret-down"></i></label>
+					<label for="btn-creative">Creative<i class="fa fa-caret-down"></i></label>
+					<label for="btn-corporate">Corporate<i class="fa fa-caret-down"></i></label>
+					<label for="btn-portfolio">Portfolio<i class="fa fa-caret-down"></i></label>
+				</div>
+				<div class="creative">
+					<img src="images/portfolio/01.jpg" alt="portfolio-1" />
+					<p>
+						<strong>Projet 1</strong><br>
+						<span>Projet réalisé par WebAgency</span>
+						<i class="fa fa-eye"></i>
+					</p>
+				</div>
+				<div class="creative">
+					<img src="images/portfolio/02.jpg" alt="portfolio-2" />
+					<p>
+						<strong>Projet 2</strong><br>
+						<span>Projet réalisé par WebAgency</span>
+						<i class="fa fa-eye"></i>
+					</p>
+				</div>
+				<div class="corporate">
+					<img src="images/portfolio/03.jpg" alt="portfolio-3" />
+					<p>
+						<strong>Projet 3</strong><br>
+						<span>Projet réalisé par WebAgency</span>
+						<i class="fa fa-eye"></i>
+					</p>
+				</div>
+				<div class="portfolio">
+					<img src="images/portfolio/04.jpg" alt="portfolio-4" />
+					<p>
+						<strong>Projet 4</strong><br>
+						<span>Projet réalisé par WebAgency</span>
+						<i class="fa fa-eye"></i>
+					</p>
+				</div>
+				<div class="corporate">
+					<img src="images/portfolio/05.jpg" alt="portfolio-5" />
+					<p>
+						<strong>Projet 5</strong><br>
+						<span>Projet réalisé par WebAgency</span>
+						<i class="fa fa-eye"></i>
+					</p>
+				</div>
+				<div class="portfolio">
+					<img src="images/portfolio/06.jpg" alt="portfolio-6" />
+					<p>
+						<strong>Projet 6</strong><br>
+						<span>Projet réalisé par WebAgency</span>
+						<i class="fa fa-eye"></i>
+					</p>
+				</div>
+				<div class="creative">
+					<img src="images/portfolio/07.jpg" alt="portfolio-7" />
+					<p>
+						<strong>Projet 7</strong><br>
+						<span>Projet réalisé par WebAgency</span>
+						<i class="fa fa-eye"></i>
+					</p>
+				</div>
+				<div class="corporate">
+					<img src="images/portfolio/08.jpg" alt="portfolio-8" />
+					<p>
+						<strong>Projet 8</strong><br>
+						<span>Projet réalisé par WebAgency</span>
+						<i class="fa fa-eye"></i>
+					</p>
+				</div>
+				<input type="submit"> 
+				<!--submit caché pour que le formulaire soit valide -->
+			</form>
+		</section>
+
+		<!-- Rubrique contact -->
+		<section id="contact">
+			<div id="backmap">
+					<!-- utilisation d'un lien Google Maps pour indiquer sur la carte l'adresse de WebAgency -->
+					<iframe id="map" sandbox="allow-scripts" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246133526!2d2.3476315511663763!3d48.87305530752656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1541750649674" allowfullscreen></iframe>
+			</div>
+			<div id="contact-info"> 
+				<!-- mise en place du formulaire de contact -->
+				<h2>Contact info</h2>
+				<address><span><strong>WebAgency SAS</strong></span>
+					<span>25 Rue d'Hauteville 75010 Paris</span>
+					<span><abbr title="Téléphone">Tel :</abbr> 01 02 03 04 05</span>
+				</address>
+				<form method="post">
+					<input type="text" placeholder="Name">
+					<input type="email" placeholder="Email">
+					<input type="text" placeholder="Subject">
+					<textarea placeholder="Message" rows="10"></textarea>
+					<input type="submit" value="Send Message">
+				</form>
+			</div>
+		</section>
+
+		<footer>
+		</footer>
+
+		<!-- Script permettant de gérer le surlignage des éléments du menu header, de passer le menu en burger pour le mode responsive et de faire fonctionner le slider -->
+	  	<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+		<script src="main.js"></script>
+
+	</body>
+</html>

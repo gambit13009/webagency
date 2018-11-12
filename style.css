@@ -1,0 +1,902 @@
+/*police de caractères utilisée*/
+body
+{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+/*** BARRE DE NAVIGATION DE L'EN-TETE***/
+#container-top
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 1;
+}
+#logo
+{
+	margin-left: 11.5%;
+}
+nav
+{
+	margin-right: 14.5%;
+}
+nav ul li
+{
+	display: inline-block;
+	text-align: center;
+	padding: 30px 15px;
+	list-style: none;
+}
+nav ul a
+{
+	color: #8E8E8E;
+	text-decoration: none;
+	font-size: 1.0em;
+}
+nav ul li a:hover
+{
+	border-top: 3px solid #5cadd3;
+	padding-top: 48px;
+	color: #606060;
+}
+.active
+{
+	border-top: 3px solid #5cadd3;
+	padding-top: 48px;
+	color: #606060;
+}
+/*menu burger pour le mode responsive*/
+.burger
+{
+	display: none;
+	position: relative;
+	top: -40px;
+	left: 750%;
+	border: 1px solid #5cadd3;
+	border-radius: 5px;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+}
+.burger span
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	width: 30px;
+	height: 4px;
+	background-color: #5cadd3;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.burger span:before, .burger span:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 30px;
+	height: 4px;
+	background-color: #5cadd3;
+	-webkit-transform: translateY(-8px);
+	-moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+.burger span:after
+{
+	-webkit-transform: translateY(8px);
+	-moz-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    -o-transform: translateY(8px);
+    transform: translateY(8px);
+}
+
+/*** PAGE D'ACCUEIL ***/
+/*dimensions du slider*/
+#slider
+{
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	margin-top: 70px;
+}
+#slider figure
+{
+	width: 200%;
+	height: auto;
+	margin: 0;
+	position: relative;
+}
+#slider figure img
+{
+	float: left;
+	width: 50%;
+	height: auto;
+}
+#slider-nav
+{
+	position: absolute;
+	top: 50%;
+	width:100%;
+   	display: flex;
+   	flex-direction: row;
+   	justify-content: space-between;
+   	opacity: 0.6;
+}
+/*flèches de navigation*/
+#slider-nav .arrow i 
+{
+	background-color: #454449;
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	line-height: 60px;
+	cursor: pointer;
+	color: white;
+}
+#arrow-left i
+{
+	padding-right: 15px;
+	text-align: right;
+	position: relative;
+	right: 40px;
+}
+#arrow-right i
+{
+	padding-left: 15px;
+	text-align: left;
+	position: relative;
+	left: 40px;
+}
+/*taille et disposition du texte*/
+#text-slide
+{
+	position: absolute;
+	color: white;
+	padding: 10% 0 0 10%;
+	margin-left: 2%;
+	max-width: 40%;
+	font-weight: bold;
+}
+#text-slide h1
+{
+	font-size: 2.3em;
+}
+span
+{
+	color: #5cadd3;
+}
+/*taille et disposition du bouton "plus d'infos"*/
+.button
+{
+	background-color: #5cadd3;
+	border: none;
+	color: white;
+	padding: 10px 18px;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 2px;
+	font-weight: bold;
+	box-shadow: 0px 4px #468cad;
+	cursor: pointer;
+}
+
+/*** RUBRIQUE SERVICES ***/
+#services
+{
+	padding: 50px 0;
+}
+.intro
+{
+	text-align: center;
+}
+.intro h2
+{
+	font-weight: bold;
+	font-size: 2.3em;
+}
+#description p
+{
+	color: #454449;
+}
+/*taille et disposition des icônes*/
+.fa
+{
+	color: #5cadd3;
+}
+.fa-circle
+{
+	text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
+}
+hr
+{
+	width: 130px;
+	opacity: 0.4;
+}
+.intro .fa-circle
+{
+	position: relative;
+	bottom: 18px;
+}
+.icon
+{
+	width: 62px;
+	height: 39px;
+	border-radius: 100px;
+	text-align: center;
+	padding-top: 25px;
+	border: 1px solid lightgrey;
+}
+.intro p
+{
+	width: 50%;
+	margin: auto;
+	color: #454449;
+}
+#full-services
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 40px auto;
+	width: 85%;
+}
+#description
+{
+	margin-top: 50px;
+}
+#description .deco
+{
+	float: left;
+	margin-right: 30px;
+	position: relative;
+}
+#full-services .fa-circle
+{
+	position: absolute;
+	top: 40%;
+	right: -6px;
+}
+/*taille et disposition du texte*/
+.text
+{
+	max-width: 600px;
+}
+.text p
+{
+	margin-left: 100px;
+	text-align: justify;
+}
+.text h3
+{
+	margin-bottom: -10px;
+	margin-top: 30px;
+}
+
+/*** RUBRIQUE NOS PROJETS ***/
+#portfolio
+{
+	background-color: #F5F5F5;
+	padding: 50px 0;
+}
+.title
+{
+	text-align: center;
+}
+.title h2
+{
+	font-weight: bold;
+	font-size: 2.3em;
+}
+.title p
+{
+	color: #454449;
+	margin: auto;
+	width: 50%;
+	margin-bottom: 3%;
+}
+/*taille et disposition du cercle et des traits de séparation*/
+.fa
+{
+	color: #5cadd3;
+}
+.fa-circle
+{
+	text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
+}
+hr
+{
+	width: 130px;
+	opacity: 0.4;
+}
+.title .fa-circle
+{
+	position: relative;
+	bottom: 18px;
+}
+/*taille et disposition du menu portfolio*/
+#portfolio form
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#projects
+{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 3rem;
+	padding: 0;
+	margin: 0;
+}
+#projects label
+{
+	background-color: #e4e4e4;
+	color: #7B7E82;
+	border-bottom: 3px solid #e5e5e5;
+	padding-top: 0.4rem;
+	padding-bottom: 1.5rem;
+	padding-left: 0.7rem;
+	height: 1em;
+	font-size: 1em;
+	cursor: pointer;
+}
+#portfolio input
+{
+	display: none;
+}
+.creative, .corporate, .portfolio
+{
+	display: none;
+	width: 20%;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	display: inline-block;
+	position: relative;
+}
+#projects label:hover
+{
+	background-color: #5cadd3;
+	color: white;
+	font-weight: bold;
+	border-bottom: 3px solid #378bac;
+}
+/*affiche le bouton en bleu lorsque le bouton correspondant est coché*/
+input[type=radio]#btn-all:checked ~ #projects label[for=btn-all],
+input[type=radio]#btn-creative:checked ~ #projects label[for=btn-creative],
+input[type=radio]#btn-corporate:checked ~ #projects label[for=btn-corporate],
+input[type=radio]#btn-portfolio:checked ~ #projects label[for=btn-portfolio]
+{
+    background-color: #5cadd3;
+	color: white;
+	font-weight: bold;
+	border-bottom: 3px solid #378bac;
+}
+/*contours arrondis à gauche et à droite de la barre de navigation*/
+#projects label[for=btn-all]
+{
+	border-top-left-radius: 5%;
+	border-bottom-left-radius: 5%;
+}
+#projects label[for=btn-portfolio]
+{
+	border-top-right-radius: 5%;
+	border-bottom-right-radius: 5%;
+}
+/*triangle en dessous du menu portfolio*/
+#projects label .fa.fa-caret-down
+{
+	font-size: 30px;
+	position: relative;
+	top: 29px;
+	right: 37px;
+	color: #378BAC;
+	opacity: 0;
+}
+#projects label:hover .fa.fa-caret-down
+{
+	opacity: 1;
+}
+input[type=radio]#btn-all:checked ~ #projects label[for=btn-all] .fa.fa-caret-down,
+input[type=radio]#btn-creative:checked ~ #projects label[for=btn-creative] .fa.fa-caret-down,
+input[type=radio]#btn-corporate:checked ~ #projects label[for=btn-corporate] .fa.fa-caret-down,
+input[type=radio]#btn-portfolio:checked ~ #projects label[for=btn-portfolio] .fa.fa-caret-down
+{
+	font-size: 30px;
+	position: relative;
+	top: 29px;
+	right: 37px;
+	color: #378BAC;
+	opacity: 1;
+}
+/*affichage des projets des différentes catégories grâce à des boutons radio cachés*/
+input[type=radio]#btn-all:checked ~ .creative, input[type=radio]#btn-all:checked ~ .corporate, input[type=radio]#btn-all:checked ~ .portfolio 
+{
+	display: block;
+}
+input[type=radio]#btn-creative:checked ~ .creative 
+{
+	display: block;
+}
+
+input[type=radio]#btn-creative:checked ~ .corporate, input[type=radio]#btn-creative:checked ~ .portfolio 
+{
+	display: none;
+}
+input[type=radio]#btn-corporate:checked ~ .corporate 
+{
+	display: block;
+}
+input[type=radio]#btn-corporate:checked ~ .creative, input[type=radio]#btn-corporate:checked ~ .portfolio 
+{
+	display: none;
+}
+input[type=radio]#btn-portfolio:checked ~ .portfolio 
+{
+	display: block;
+}
+input[type=radio]#btn-portfolio:checked ~ .creative, input[type=radio]#btn-portfolio:checked ~ .corporate 
+{
+	display: none;
+}
+#portfolio form input[type="submit"]
+{
+	display: none;
+}
+/*taille et disposition des images du menu portfolio*/
+#portfolio form div
+{
+	position: relative;
+	margin: 1rem;
+}
+#portfolio form div img
+{
+	max-width: 100%;
+}
+#portfolio form div p
+{
+	display: none;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	text-align: left;
+	bottom: 0.25rem;
+	width: 89.5%;
+	margin: 0;
+	padding: 1rem;
+}
+#portfolio form div:hover p
+{
+	display: block;
+}
+#portfolio form div p strong
+{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#portfolio form div p *
+{
+	color: white;
+}
+.fa-eye
+{
+	background-color: #4494bb;
+	border: 2px solid white;
+	border-radius: 50%;
+	position: absolute;
+	padding: 14px;
+	top: -1.5rem;
+	right: 0.8rem;
+}
+
+
+/*** RUBRIQUE CONTACT ***/
+/*mise en place de la carte avec un lien Google Map*/
+#contact
+{
+	display: flex;
+}
+#backmap
+{
+	width: 100%;
+	height: 100vh;
+	background-color: #5cadd3;
+	margin: 0;
+}
+#map
+{
+	width: 100%;
+	height: 100vh;
+	opacity: 0.5;
+	border: 0;
+}
+/*mise en forme du formulaire de contact*/
+#contact-info
+{
+	background-color: rgba(255,255,255,0.75);
+	left: 60%;
+	width: 25%;
+	margin: 5%;
+	position: absolute;
+}
+#contact-info h2
+{
+	font-size: 2em;
+	margin-bottom: 0.1rem;
+	padding-top: 0;
+	text-align: left;
+}
+#contact-info > *
+{
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem;
+	width: 95%;
+	margin-left: 1rem;
+}
+#contact-info form
+{
+	margin-left: 0.2rem;
+}
+input, textarea
+{
+	margin: 0.6rem;
+	background-color: white;
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 0.5rem;
+	font-weight: bold;
+}
+address
+{
+	text-align: left;
+	font-style: normal;
+}
+address span
+{
+	color: #64686d;
+}
+/*taille du bouton "send message"*/
+input[type="submit"]
+{
+	background-color: #5cadd3;
+	border: 3px solid #5cadd3;
+	border-bottom: 3px solid #4494bb;
+	border-radius: 0.2rem;
+	color: white;
+	padding: 0.5rem;
+	font-weight: bold;
+	font-size: 0.9em;
+	margin: 0.6rem;
+	width: 35%;
+	cursor: pointer;
+}
+
+
+
+/*** MODE RESPONSIVE ***/
+
+@media screen and (max-width: 1024px)
+/*pour les tablettes*/
+{
+	/*dimensions en-tête*/
+	#container-top
+	{
+		height: 80px;
+	}
+	header #container-top
+	{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+				flex-direction: column;
+		-webkit-flex-wrap: nowrap;
+			-ms-flex-wrap: nowrap;
+				flex-wrap: nowrap;
+		position: fixed;
+	}
+	header img
+	{
+		width: 180px;
+		margin-top: 20px;
+		margin-bottom: -10px;
+	}
+	#logo
+	{
+		margin-left: -460px;
+	}
+	/*configuration menu burger*/
+	#container-top li
+	{
+		margin-right: 0;
+		padding: 5px 0 5px 0;
+	}
+	nav ul
+	{
+		padding-left: 0;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	nav ul li
+	{
+		display: block;
+	}
+	nav ul li a:hover
+	{
+		font-weight: bold;
+		border-top: none;
+		padding-top: 0;
+		cursor: pointer;
+	}
+	.active
+	{
+		font-weight: bold;
+		background-color: grey;
+		border-top: none;
+	}
+	header .burger
+	{
+		display: block;
+	}
+	header ul
+	{
+		-webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+    	-webkit-flex-direction: column;
+    	-moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    	position: fixed;
+    	background-color: #5cadd3;
+    	opacity: 0.9;
+    	height: 167px;
+    	top: 75px;
+    	right: -100%;
+    	width: 49%;
+    	padding: 0;
+   	}
+	header ul a
+	{
+		color: white;
+	}
+	/*classe pour afficher le menu responsive avec le burger*/
+	header .showMenu 
+	{
+		right: 0;
+	}
+	header li
+	{
+		height: 30px;
+		padding: 10px;
+		line-height: 100%;
+		text-align: center;
+		border-top: 1px solid #454449;
+		border-bottom: 1px solid #454449;
+		border-left: 1px solid #454449;
+		border-right: 1px solid #454449;
+	}
+	/*configuartion menu slider*/
+	#slider
+	{
+		width: 100%;
+		height: 100%;
+		margin-top: 12%;
+	}
+	#slider-nav
+	{
+		top: 30%;
+	}
+	#text-slide
+	{
+		width: auto;
+		position: absolute;
+		left: 10px;
+		text-align: center;
+		padding-top: 0;
+	}
+	/*disposition rubrique services*/
+	#services
+	{
+		margin-top: 0;
+	}
+	#services img
+	{
+		width: 100%;
+	}
+	#portfolio
+	{
+		margin-top: 0;
+	}
+	/*taille et disposition de la barre du menu portfolio*/
+	#projects
+	{
+		flex-direction: column;
+		margin-top: 3rem;
+		padding-left: 13%;
+		padding-right: 13%;
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+	#projects label[for=btn-all]
+	{
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	#projects label[for=btn-portfolio]
+	{
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	#projects label:hover
+	{
+		font-weight: normal;
+	}
+	#projects label:hover .fa.fa-caret-down
+	{
+		display: none;
+	}
+	input[type=radio]#btn-all:checked ~ #projects label[for=btn-all] .fa.fa-caret-down,
+	input[type=radio]#btn-creative:checked ~ #projects label[for=btn-creative] .fa.fa-caret-down,
+	input[type=radio]#btn-corporate:checked ~ #projects label[for=btn-corporate] .fa.fa-caret-down,
+	input[type=radio]#btn-portfolio:checked ~ #projects label[for=btn-portfolio] .fa.fa-caret-down
+	{
+		display: none;
+	}
+	#portfolio form div
+	{
+		width: 40%;
+	}
+	#portfolio form div p
+	{
+		width: 91.5%;
+	}
+	/*taille de la Google Map*/
+	#backmap
+	{
+		height: 700px;
+	}
+	#backmap iframe
+	{
+		height: 700px;
+	}
+	/*taille de la fenêtre de contact*/
+	#contact-info
+	{
+		width: 30%;
+	}
+	/*taille du bouton "send message"*/
+	input[type="submit"]
+	{
+		width: 55%;
+	}
+}
+
+@media screen and (max-width: 768px)
+/*pour les smartphones*/
+{
+	/*dimensions en-tête*/
+	#container-top
+	{
+		height: 75px;
+	}
+	header img
+	{
+		width: 120px;
+		margin-top: 20px;
+	}
+	#logo
+	{
+		margin-left: -160px;
+	}
+	.burger
+	{
+		left: 272%;
+		top: -30px;
+	}
+	header ul
+	{
+		right: -100%;
+    	width: 100%;
+    }
+	/*configuration menu slider*/
+	#slider
+	{
+		margin-top: 30%;
+	}
+	#text-slide
+	{
+		padding-top: 5%;
+	}
+	#text-slide h1
+	{
+		font-size: 0.6em;
+	}
+	#text-slide p
+	{
+		display: none;
+	}
+	.button
+	{
+		font-size: 8px;
+		padding: 2px 6px;
+		box-shadow: none;
+	}
+	/*disposition des images de la rubrique services*/
+	#services
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin-top: -40px;
+		margin-left: -3%;
+	}
+	#portfolio
+	{
+		margin-top: -30%;
+	}
+	#portfolio form div
+	{
+		width: 100%;
+	}
+	#portfolio form div p
+	{
+		width: 89%;
+	}
+	/*fenêtre contact disposée sous la carte Google map*/
+	#contact
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	/*dimensions de la fenêtre contact*/
+	#contact-info
+	{
+		width: auto;
+		margin: 1.5rem;
+		position: static;
+		text-align: center;
+		padding: 0;
+	}
+	#contact-info h2
+	{
+		text-align: left;
+	}
+	#contact input,
+	#contact textarea
+	{
+		text-align: center;
+	}
+	#contact textarea
+	{
+		font-size: 0.9rem;
+	}
+	/*taille du bouton "send message"*/
+	input[type="submit"]
+	{
+		width: 45%;
+	}
+}
