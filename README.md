@@ -1,4 +1,4 @@
-![alt tag] (images/logo.png)
+![alt tag](images/logo.png)
 
 
 Vous venez d'être embauché(e) par une agence Web, la WebAgency, qui réalise des sites web pour différents clients. Cependant, ils reconnaissent eux-mêmes que leur site actuel est vieillissant car ils ont peu de temps pour travailler dessus. Certes, il paraît que les cordonniers sont les plus mal chaussés, mais tout de même...
