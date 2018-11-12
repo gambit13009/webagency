@@ -180,13 +180,19 @@ nav ul li a:hover
 #text-slide h1
 {
 	font-size: 2.3em;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 span
 {
 	color: #5cadd3;
 }
+#text-slide p
+{
+	margin-bottom: 35px;
+}
 /*taille et disposition du bouton "plus d'infos"*/
-#text-slide input[type="submit"]
+#text-slide a
 {
 	background-color: #5cadd3;
 	border: none;
@@ -198,6 +204,7 @@ span
 	border-radius: 2px;
 	font-weight: bold;
 	box-shadow: 0px 4px #468cad;
+	text-decoration: none;
 	cursor: pointer;
 }
 
@@ -718,11 +725,6 @@ address span
 		text-align: center;
 		padding-top: 0;
 	}
-	/*taille et disposition du bouton "plus d'infos"*/
-	#text-slide input[type="submit"]
-	{
-		width: 36%;
-	}
 	/*disposition rubrique services*/
 	#services
 	{
@@ -830,11 +832,11 @@ address span
 	/*configuration menu slider*/
 	#slider
 	{
-		margin-top: 30%;
+		margin-top: 25%;
 	}
 	#text-slide
 	{
-		padding-top: 5%;
+		padding-top: 10%;
 	}
 	#text-slide h1
 	{
@@ -845,7 +847,7 @@ address span
 		display: none;
 	}
 	/*taille et disposition du bouton "plus d'infos"*/
-	#text-slide input[type="submit"]
+	#text-slide a
 	{
 		width: 45%;
 		font-size: 8px;
