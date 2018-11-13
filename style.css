@@ -142,7 +142,7 @@ nav ul li a:hover
    	justify-content: space-between;
    	opacity: 0.6;
 }
-/*flèches de navigation*/
+/*flèches de navigation du slider*/
 #slider-nav .arrow i 
 {
 	background-color: #454449;
@@ -211,7 +211,7 @@ span
 /*** RUBRIQUE SERVICES ***/
 #services
 {
-	padding: 50px 0;
+	padding-top: 1px;
 }
 .intro
 {
@@ -305,7 +305,7 @@ hr
 #portfolio
 {
 	background-color: #F5F5F5;
-	padding: 50px 0;
+	padding-top: 1px;
 }
 .title
 {
@@ -585,8 +585,8 @@ address span
 {
 	color: #64686d;
 }
-/*taille du bouton "send message"*/
-#contact-info input[type="submit"]
+/*taille du bouton Send message*/
+#contact-info a
 {
 	background-color: #5cadd3;
 	border: 3px solid #5cadd3;
@@ -597,7 +597,9 @@ address span
 	font-weight: bold;
 	font-size: 0.9em;
 	margin: 0.6rem;
-	width: 35%;
+	width: 30%;
+	text-decoration: none;
+	text-align: center;
 	cursor: pointer;
 }
 
@@ -726,19 +728,15 @@ address span
 		padding-top: 0;
 	}
 	/*disposition rubrique services*/
-	#services
-	{
-		margin-top: 0;
-	}
 	#services img
 	{
 		width: 100%;
 	}
+	/*taille et disposition de la barre du menu portfolio*/
 	#portfolio
 	{
 		margin-top: 0;
 	}
-	/*taille et disposition de la barre du menu portfolio*/
 	#projects
 	{
 		flex-direction: column;
@@ -795,10 +793,10 @@ address span
 	{
 		width: 30%;
 	}
-	/*taille du bouton "send message"*/
-	#contact-info input[type="submit"]
+	/*taille du bouton Send message*/
+	#contact-info a
 	{
-		width: 55%;
+		width: 37%;
 	}
 }
 
@@ -861,13 +859,10 @@ address span
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-		margin-top: -40px;
-		margin-left: -3%;
+		padding-top: 1px;
+		padding-bottom: 0;
 	}
-	#portfolio
-	{
-		margin-top: -30%;
-	}
+	/*taille et disposition des images du menu portfolio*/
 	#portfolio form div
 	{
 		width: 100%;
@@ -904,9 +899,9 @@ address span
 	{
 		font-size: 0.9rem;
 	}
-	/*taille du bouton "send message"*/
-	#contact-info input[type="submit"]
+	/*taille du bouton Send message*/
+	#contact-info a
 	{
-		width: 45%;
+		width: 38%;
 	}
 }
