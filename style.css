@@ -56,7 +56,7 @@ nav ul li a:hover
 	padding-top: 48px;
 	color: #606060;
 }
-/*menu burger pour le mode responsive*/
+/*configuration du menu burger pour le mode responsive*/
 .burger
 {
 	display: none;
@@ -191,7 +191,7 @@ span
 {
 	margin-bottom: 35px;
 }
-/*taille et disposition du bouton "plus d'infos"*/
+/*taille et disposition du bouton Plus d'infos*/
 #text-slide a
 {
 	background-color: #5cadd3;
@@ -539,7 +539,7 @@ input[type=radio]#btn-portfolio:checked ~ .creative, input[type=radio]#btn-portf
 	opacity: 0.5;
 	border: 0;
 }
-/*mise en forme du formulaire de contact*/
+/*dimensions du formulaire de contact*/
 #contact-info
 {
 	background-color: rgba(255,255,255,0.75);
@@ -610,7 +610,7 @@ address span
 @media screen and (max-width: 1024px)
 /*pour les tablettes*/
 {
-	/*dimensions en-tête*/
+	/*dimensions de l'en-tête*/
 	#container-top
 	{
 		height: 80px;
@@ -637,7 +637,7 @@ address span
 	{
 		margin-left: -460px;
 	}
-	/*configuration menu burger*/
+	/*configuration du menu burger*/
 	#container-top li
 	{
 		margin-right: 0;
@@ -708,7 +708,7 @@ address span
 		border-left: 1px solid #454449;
 		border-right: 1px solid #454449;
 	}
-	/*configuartion menu slider*/
+	/*configuration du menu slider*/
 	#slider
 	{
 		width: 100%;
@@ -727,7 +727,7 @@ address span
 		text-align: center;
 		padding-top: 0;
 	}
-	/*disposition rubrique services*/
+	/*disposition de la rubrique services*/
 	#services img
 	{
 		width: 100%;
@@ -788,7 +788,7 @@ address span
 	{
 		height: 700px;
 	}
-	/*taille de la fenêtre de contact*/
+	/*dimensions du formulaire de contact*/
 	#contact-info
 	{
 		width: 30%;
@@ -803,7 +803,7 @@ address span
 @media screen and (max-width: 768px)
 /*pour les smartphones*/
 {
-	/*dimensions en-tête*/
+	/*dimensions de l'en-tête*/
 	#container-top
 	{
 		height: 75px;
@@ -827,7 +827,7 @@ address span
 		right: -100%;
     	width: 100%;
     }
-	/*configuration menu slider*/
+	/*configuration du menu slider*/
 	#slider
 	{
 		margin-top: 25%;
@@ -844,7 +844,7 @@ address span
 	{
 		display: none;
 	}
-	/*taille et disposition du bouton "plus d'infos"*/
+	/*taille et disposition du bouton Plus d'infos*/
 	#text-slide a
 	{
 		width: 45%;
@@ -877,7 +877,7 @@ address span
 		display: flex;
 		flex-direction: column-reverse;
 	}
-	/*dimensions de la fenêtre contact*/
+	/*dimensions du formulaire de contact*/
 	#contact-info
 	{
 		width: auto;

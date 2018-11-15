@@ -1,4 +1,4 @@
-/*Ajoute un liseré bleu au dessus du nom de la section de page active dans la barre de navigation*/
+/*Ajoute un trait bleu au dessus du nom de la section de page active dans la barre de navigation*/
 $(document).ready(function() {
     $('#container-top li').on('click', function(){
         $('#container-top li').removeClass('active');
