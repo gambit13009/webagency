@@ -388,7 +388,6 @@ hr
 {
 	background-color: #5cadd3;
 	color: white;
-	font-weight: bold;
 	border-bottom: 3px solid #378bac;
 }
 /*affiche le bouton en bleu lorsque le bouton correspondant est coché*/
@@ -422,10 +421,6 @@ input[type=radio]#btn-portfolio:checked ~ #projects label[for=btn-portfolio]
 	right: 37px;
 	color: #378BAC;
 	opacity: 0;
-}
-#projects label:hover .fa.fa-caret-down
-{
-	opacity: 1;
 }
 input[type=radio]#btn-all:checked ~ #projects label[for=btn-all] .fa.fa-caret-down,
 input[type=radio]#btn-creative:checked ~ #projects label[for=btn-creative] .fa.fa-caret-down,
@@ -520,7 +515,7 @@ input[type=radio]#btn-portfolio:checked ~ .creative, input[type=radio]#btn-portf
 
 
 /*** RUBRIQUE CONTACT ***/
-/*mise en place de la carte avec un lien Google Map*/
+/*mise en place de la carte avec un lien Google Maps*/
 #contact
 {
 	display: flex;
@@ -739,38 +734,41 @@ address span
 	}
 	#projects
 	{
-		flex-direction: column;
-		margin-top: 3rem;
 		padding-left: 13%;
 		padding-right: 13%;
-		margin-bottom: 3rem;
-		text-align: center;
 	}
-	#projects label[for=btn-all]
+	#projects label
 	{
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
+		padding-bottom: 16px;
+		padding-top: 12px;
 	}
-	#projects label[for=btn-portfolio]
+	/*triangle en dessous du menu portfolio*/
+	#projects label .fa.fa-caret-down
 	{
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-	#projects label:hover
-	{
-		font-weight: normal;
-	}
-	#projects label:hover .fa.fa-caret-down
-	{
-		display: none;
+		font-size: 30px;
+		position: relative;
+		top: 3px;
+		left: 22px;
+		color: #378BAC;
+		opacity: 0;
 	}
 	input[type=radio]#btn-all:checked ~ #projects label[for=btn-all] .fa.fa-caret-down,
 	input[type=radio]#btn-creative:checked ~ #projects label[for=btn-creative] .fa.fa-caret-down,
-	input[type=radio]#btn-corporate:checked ~ #projects label[for=btn-corporate] .fa.fa-caret-down,
 	input[type=radio]#btn-portfolio:checked ~ #projects label[for=btn-portfolio] .fa.fa-caret-down
 	{
-		display: none;
+		font-size: 30px;
+		position: relative;
+		top: 3px;
+		left: 22px;
+		color: #378BAC;
+		opacity: 1;
 	}
+	input[type=radio]#btn-corporate:checked ~ #projects label[for=btn-corporate] .fa.fa-caret-down
+	{
+		left: 26px;
+		top: 3px;
+	}
+	/*taille et disposition des images du menu portfolio*/
 	#portfolio form div
 	{
 		width: 40%;
@@ -779,7 +777,7 @@ address span
 	{
 		width: 91.5%;
 	}
-	/*taille de la Google Map*/
+	/*taille de la Google Maps*/
 	#backmap
 	{
 		height: 700px;
@@ -862,6 +860,30 @@ address span
 		padding-top: 1px;
 		padding-bottom: 0;
 	}
+	/*taille et disposition de la barre du menu portfolio*/
+	#projects
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#projects label
+	{
+		padding-left: 4px;
+		padding-bottom: 14px;
+		padding-top: 10px;
+	}
+	input[type=radio]#btn-all:checked ~ #projects label[for=btn-all] .fa.fa-caret-down,
+	input[type=radio]#btn-creative:checked ~ #projects label[for=btn-creative] .fa.fa-caret-down,
+	input[type=radio]#btn-portfolio:checked ~ #projects label[for=btn-portfolio] .fa.fa-caret-down
+	{
+		left: 22px;
+		top: 1px;
+	}
+	input[type=radio]#btn-corporate:checked ~ #projects label[for=btn-corporate] .fa.fa-caret-down
+	{
+		left: 26px;
+		top: 1px;
+	}
 	/*taille et disposition des images du menu portfolio*/
 	#portfolio form div
 	{
@@ -871,7 +893,7 @@ address span
 	{
 		width: 89%;
 	}
-	/*formulaire de contact affiché avant la carte Google map*/
+	/*formulaire de contact affiché avant la carte Google maps*/
 	#contact
 	{
 		display: flex;

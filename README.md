@@ -16,3 +16,7 @@ Des exemples de projets déjà réalisés
 Une carte avec un formulaire de contact (on ne vous demande pas de faire marcher le formulaire, juste de l'afficher).
 
 Le site sera réalisé en HTML et CSS (sans framework tel que Bootstrap).
+
+Vous pouvez accéder au projet, à l'adresse suivante :
+https://gambit13009.github.io/webagency
+
