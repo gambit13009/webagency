@@ -1,11 +1,11 @@
-/*police de caractères utilisée*/
+/*Police de caractères utilisée*/
 body
 {
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 }
 
-/*** BARRE DE NAVIGATION DE L'EN-TETE***/
+/*** BARRE DE NAVIGATION DE L'EN-TETE ***/
 #container-top
 {
 	display: flex;
@@ -413,7 +413,7 @@ input[type=radio]#btn-portfolio:checked ~ #projects label[for=btn-portfolio]
 	border-top-right-radius: 5%;
 	border-bottom-right-radius: 5%;
 }
-/*triangle en dessous du menu portfolio*/
+/*sélecteur triangle en dessous du menu portfolio*/
 #projects label .fa.fa-caret-down
 {
 	font-size: 30px;
@@ -435,7 +435,7 @@ input[type=radio]#btn-portfolio:checked ~ #projects label[for=btn-portfolio] .fa
 	color: #378BAC;
 	opacity: 1;
 }
-/*affichage des projets des différentes catégories grâce à des boutons radio cachés*/
+/*affichage des projets des différentes catégories grâce aux boutons radio*/
 input[type=radio]#btn-all:checked ~ .creative, input[type=radio]#btn-all:checked ~ .corporate, input[type=radio]#btn-all:checked ~ .portfolio 
 {
 	display: block;
@@ -688,7 +688,7 @@ address span
 	{
 		color: white;
 	}
-	/*classe pour afficher le menu responsive avec le burger*/
+	/*pour afficher le menu responsive avec le burger*/
 	header .showMenu 
 	{
 		right: 0;
@@ -729,7 +729,7 @@ address span
 	{
 		width: 100%;
 	}
-	/*taille et disposition de la barre du menu portfolio*/
+	/*taille et disposition de la barre de navigation du menu portfolio*/
 	#portfolio
 	{
 		margin-top: 0;
@@ -744,7 +744,7 @@ address span
 		padding-bottom: 16px;
 		padding-top: 12px;
 	}
-	/*triangle en dessous du menu portfolio*/
+	/*sélecteur triangle en dessous du menu portfolio*/
 	#projects label .fa.fa-caret-down
 	{
 		font-size: 30px;
@@ -873,7 +873,7 @@ address span
 		padding-top: 1px;
 		padding-bottom: 0;
 	}
-	/*taille et disposition de la barre du menu portfolio*/
+	/*taille et disposition de la barre de navigation du menu portfolio*/
 	#projects
 	{
 		padding-left: 0;

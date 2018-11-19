@@ -11,7 +11,7 @@ $('.burger').click(function(e){
 	$('nav ul').toggleClass('showMenu');
 });
 
-/*Défilement avec les flèches vers la droite ou la gauche des images du slider*/
+/*Défilement vers la droite ou la gauche des images du slider*/
 var goRight = true;
 $(function () {
 	$('#arrow-right').on('click', function () {
