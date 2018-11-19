@@ -141,6 +141,7 @@ nav ul li a:hover
    	display: flex;
    	flex-direction: row;
    	justify-content: space-between;
+   	opacity: 0.8;
 }
 /*flèches de navigation du slider*/
 #slider-nav .arrow i 
