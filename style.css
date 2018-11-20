@@ -741,8 +741,8 @@ address span
 	}
 	#projects label
 	{
-		padding-bottom: 16px;
-		padding-top: 12px;
+		padding-bottom: 22px;
+		padding-top: 4px;
 	}
 	/*masque le sélecteur triangle sous la barre de navigation du menu portfolio*/
 	#projects label .fa.fa-caret-down
@@ -767,11 +767,11 @@ address span
 	/*taille et disposition des images du menu portfolio*/
 	#portfolio form div
 	{
-		width: 40%;
+		width: 45%;
 	}
 	#portfolio form div p
 	{
-		max-width: auto;
+		width: 92%;
 	}
 	/*taille de la Google Maps*/
 	#backmap
@@ -884,13 +884,9 @@ address span
 	{
 		width: 100%;
 	}
-	#portfolio form div img
-	{
-		justify-content: center;
-	}
 	#portfolio form div p
 	{
-		max-width: auto;
+		max-width: 100%;
 	}
 	/*formulaire de contact affiché avant la carte Google maps*/
 	#contact
