@@ -744,31 +744,27 @@ address span
 		padding-bottom: 16px;
 		padding-top: 12px;
 	}
-	/*sélecteur triangle en dessous du menu portfolio*/
+	/*masque le sélecteur triangle sous la barre de navigation du menu portfolio*/
 	#projects label .fa.fa-caret-down
 	{
 		font-size: 30px;
 		position: relative;
 		top: 3px;
 		left: 22px;
-		color: #378BAC;
+		color: transparent;
 		opacity: 0;
 	}
 	input[type=radio]#btn-all:checked ~ #projects label[for=btn-all] .fa.fa-caret-down,
 	input[type=radio]#btn-creative:checked ~ #projects label[for=btn-creative] .fa.fa-caret-down,
-	input[type=radio]#btn-portfolio:checked ~ #projects label[for=btn-portfolio] .fa.fa-caret-down
+	input[type=radio]#btn-portfolio:checked ~ #projects label[for=btn-portfolio] .fa.fa-caret-down,
+	input[type=radio]#btn-corporate:checked ~ #projects label[for=btn-corporate] .fa.fa-caret-down
 	{
 		font-size: 30px;
 		position: relative;
 		top: 3px;
 		left: 22px;
-		color: #378BAC;
-		opacity: 1;
-	}
-	input[type=radio]#btn-corporate:checked ~ #projects label[for=btn-corporate] .fa.fa-caret-down
-	{
-		left: 26px;
-		top: 3px;
+		color: transparent;
+		opacity: 0;
 	}
 	/*taille et disposition des images du menu portfolio*/
 	#portfolio form div
@@ -882,20 +878,8 @@ address span
 	#projects label
 	{
 		padding-left: 4px;
-		padding-bottom: 14px;
+		padding-bottom: 12px;
 		padding-top: 10px;
-	}
-	input[type=radio]#btn-all:checked ~ #projects label[for=btn-all] .fa.fa-caret-down,
-	input[type=radio]#btn-creative:checked ~ #projects label[for=btn-creative] .fa.fa-caret-down,
-	input[type=radio]#btn-portfolio:checked ~ #projects label[for=btn-portfolio] .fa.fa-caret-down
-	{
-		left: 22px;
-		top: 1px;
-	}
-	input[type=radio]#btn-corporate:checked ~ #projects label[for=btn-corporate] .fa.fa-caret-down
-	{
-		left: 26px;
-		top: 1px;
 	}
 	/*taille et disposition des images du menu portfolio*/
 	#portfolio form div
