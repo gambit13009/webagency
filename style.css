@@ -876,13 +876,17 @@ address span
 	#projects label
 	{
 		padding-left: 4px;
-		padding-bottom: 14px;
-		padding-top: 8px;
+		padding-bottom: 12px;
+		padding-top: 10px;
 	}
 	/*taille et disposition des images du menu portfolio*/
 	#portfolio form div
 	{
 		width: 100%;
+	}
+	#portfolio form div img
+	{
+		justify-content: center;
 	}
 	#portfolio form div p
 	{
