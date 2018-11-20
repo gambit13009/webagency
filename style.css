@@ -886,7 +886,7 @@ address span
 	}
 	#portfolio form div p
 	{
-		max-width: 100%;
+		width: 89%;
 	}
 	/*formulaire de contact affiché avant la carte Google maps*/
 	#contact
