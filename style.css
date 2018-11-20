@@ -752,7 +752,6 @@ address span
 		top: 3px;
 		left: 22px;
 		color: transparent;
-		opacity: 0;
 	}
 	input[type=radio]#btn-all:checked ~ #projects label[for=btn-all] .fa.fa-caret-down,
 	input[type=radio]#btn-creative:checked ~ #projects label[for=btn-creative] .fa.fa-caret-down,
@@ -764,7 +763,6 @@ address span
 		top: 3px;
 		left: 22px;
 		color: transparent;
-		opacity: 0;
 	}
 	/*taille et disposition des images du menu portfolio*/
 	#portfolio form div
@@ -773,7 +771,7 @@ address span
 	}
 	#portfolio form div p
 	{
-		width: 91.5%;
+		max-width: auto;
 	}
 	/*taille de la Google Maps*/
 	#backmap
@@ -878,8 +876,8 @@ address span
 	#projects label
 	{
 		padding-left: 4px;
-		padding-bottom: 12px;
-		padding-top: 10px;
+		padding-bottom: 14px;
+		padding-top: 8px;
 	}
 	/*taille et disposition des images du menu portfolio*/
 	#portfolio form div
@@ -888,7 +886,7 @@ address span
 	}
 	#portfolio form div p
 	{
-		width: 89%;
+		max-width: auto;
 	}
 	/*formulaire de contact affiché avant la carte Google maps*/
 	#contact
