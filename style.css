@@ -227,7 +227,7 @@ span
 {
 	color: #454449;
 }
-/*taille et disposition des icônes*/
+/*taille et disposition du cercle et des traits de séparation*/
 .fa
 {
 	color: #5cadd3;
@@ -246,6 +246,7 @@ hr
 	position: relative;
 	bottom: 18px;
 }
+/*taille et disposition des icônes*/
 .icon
 {
 	width: 62px;
