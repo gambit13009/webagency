@@ -337,7 +337,7 @@ hr
 hr
 {
 	width: 130px;
-	opacity: 0.4;
+	opacity: 0.5;
 }
 .title .fa-circle
 {
@@ -682,7 +682,7 @@ address span
     	height: 167px;
     	top: 75px;
     	right: -100%;
-    	width: 49%;
+    	width: 100%;
     	padding: 0;
    	}
 	header ul a
@@ -825,7 +825,7 @@ address span
 	/*configuration du menu slider*/
 	#slider
 	{
-		margin-top: 20%;
+		margin-top: 75px;
 	}
 	#slider-nav
 	{
